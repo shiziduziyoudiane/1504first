@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matio.seashell.ui.fragment.CategoryFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_fragment_category"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/return_grey" />
+
+        <TextView
+            style="@style/TitleCenter"
+            android:text="@string/category_slidingmenu" />
+
+
+        <ImageView style="@style/ImageRight"
+            android:id="@+id/category_topRight"/>
+
+    </android.support.v7.widget.Toolbar>
+<FrameLayout
+    android:id="@+id/container_fragment_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_fragment_category">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_fragment_category"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/left_listview_fragment_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:layout_weight="2" />
+
+        <ListView
+            android:id="@+id/right_listview_fragment_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+</FrameLayout>
+</RelativeLayout>

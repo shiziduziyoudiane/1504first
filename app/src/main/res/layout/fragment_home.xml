@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matio.seashell.ui.fragment.HomeFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/showslidingmenu_fragment_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu" />
+
+        <TextView
+            style="@style/TitleCenter"
+            android:text="@string/seashell" />
+
+        <ImageView style="@style/ImageRight"
+            android:id="@+id/search_fragment_home"
+            android:src="@mipmap/search"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/srl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_fragment_home"
+        app:srl_direction="both">
+
+        <in.srain.cube.views.GridViewWithHeaderAndFooter
+            android:id="@+id/gridview_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp" />
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/cart_home"
+        android:src="@mipmap/cart" />
+
+</RelativeLayout>

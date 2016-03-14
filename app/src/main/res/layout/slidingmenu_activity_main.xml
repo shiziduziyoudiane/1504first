@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/info_activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/user_img" />
+
+        <TextView
+            android:id="@+id/login_activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/info_activity_main"
+            android:background="@drawable/slidingmenu_login_txt"
+            android:text="@string/login_slidingmenu" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_slidingmenu_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/home"
+            android:text="@string/home_slidingmenu" />
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:drawableLeft="@mipmap/discover"
+            android:text="@string/discover_slidingmenu" />
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:drawableLeft="@mipmap/category"
+            android:text="@string/category_slidingmenu" />
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:drawableLeft="@mipmap/orders"
+            android:text="@string/orders_slidingmenu" />
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:drawableLeft="@mipmap/settings"
+            android:text="@string/settings_slidingmenu" />
+
+        <RadioButton
+            style="@style/SlidingMenuRadioGroup"
+            android:drawableLeft="@mipmap/help"
+            android:text="@string/help_slidingmenu" />
+
+    </RadioGroup>
+
+</LinearLayout>

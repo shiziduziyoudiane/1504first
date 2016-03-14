@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SeaShell</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="seashell">海呗</string>
+
+    <!--侧滑菜单-->
+    <string name="home_slidingmenu">首页</string>
+
+    <string name="discover_slidingmenu">发现</string>
+
+    <string name="category_slidingmenu">分类</string>
+
+    <string name="orders_slidingmenu">订单</string>
+
+    <string name="settings_slidingmenu">设置</string>
+
+    <string name="help_slidingmenu">帮助</string>
+
+    <string name="login_slidingmenu">登录</string>
+    <string name="detail">详情</string>
+
+
+</resources>

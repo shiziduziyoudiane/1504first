@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.matio.seashell.widget.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner_fragment_home_detail"
+            android:layout_width="match_parent"
+            android:layout_height="260dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="氨基酸面膜" />
+
+
+        <RatingBar
+            style="?android:ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/little_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_home_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥1163.74"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/little_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_home_detail_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务支持"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_detail_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_home_detail_support"
+                android:text="物流"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_detail_payway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_home_detail_from"
+                android:text="支付方式"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_detail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_home_detail_payway"
+                android:text="购买权益"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_detail_showmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="查看更多..."
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/little_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_home_detail_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="评论（0）"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/go_to_center_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/little_gray" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_home_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+    </LinearLayout>
+</com.matio.seashell.widget.VerticalScrollView>
